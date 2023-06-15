@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>form</title>
+  </head>
+  <body>
+    <form action="3_iframe.html" method="get">
+      <!-- required 반드시 작성해야한다라는 뜻 -->
+      <p>아이디 : <input type="text" name="user_id" required /></p>
+      <!-- 127.0.0.1:5500/#?user_id=id -->
+      <p>비밀번호 : <input type="password" name="user_password" required /></p>
+      <!-- button 요소의 기본 타입 속성값은 submit-->
+      <!-- 따라서 form안에 있는 button요소는 모두 submit -->
+      <!-- 그러나 내가 제출을 원하지 않는 버튼이 있다면 -->
+      <button>로그인</button>
+      <button type="button">제출안함</button>
+      <button type="reset">초기화</button>
+    </form>
+  </body>
+</html>

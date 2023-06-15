@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>요소</title>
+  </head>
+  <body>
+    <!-- div 태그는 대표적인 block태그로 길이가 100% -->
+    <!-- 반면 span 태그는 대표적인 inline태그로 길이가 내용물크기만 있음 -->
+    <div>안녕하세요</div>
+    <span> 반 </span>
+    <span> 가 </span>
+    <span> 워 </span>
+    <span> 요 </span>
+    <p>
+      저의 이름은
+      <span>
+        j
+        <span>i</span>
+        n
+      </span>
+      입니다.
+    </p>
+    <h1>만나서 반갑습니다</h1>
+
+    <dialog open>
+      <h2>돼지 저금통</h2>
+      <label for="money">지갑에 동전을 얼마 넣을까요?</label>
+      <div>
+        <input
+          name="amount"
+          id="money"
+          type="number"
+          min="0"
+          step="100"
+          value="100"
+        />
+      </div>
+      <div><input name="round" type="checkbox" />1,000원 단위로 넣기</div>
+      <button type="submit" value="saving">동전 넣기</button>
+    </dialog>
+  </body>
+</html>
